@@ -1,5 +1,13 @@
 fileFormatVersion: 2
 guid: b7e38f038aaa6f54e94dd17398b7cf3b
+AssetOrigin:
+  serializedVersion: 1
+  productId: 312497
+  packageName: Pixel Art Character Package
+  packageVersion: 1.0
+  assetPath: Assets/GDD - Quinnipiac/Pixel Art Character Package/Characters/Rattles/Rattles
+    Turquoise/Rattles air-Sheet.png
+  uploadId: 746928
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -34,7 +42,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -95,6 +103,19 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
     buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -220,11 +241,3 @@ TextureImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 312497
-  packageName: Pixel Art Character Package
-  packageVersion: 1.0
-  assetPath: Assets/GDD - Quinnipiac/Pixel Art Character Package/Characters/Rattles/Rattles
-    Turquoise/Rattles air-Sheet.png
-  uploadId: 746928
