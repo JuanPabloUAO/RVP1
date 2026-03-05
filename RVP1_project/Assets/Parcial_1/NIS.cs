@@ -93,7 +93,7 @@ public partial class @NIS: IInputActionCollection2, IDisposable
             ""id"": ""1a868bc6-aa79-4dec-a164-af054523a6aa"",
             ""actions"": [
                 {
-                    ""name"": ""Caminar"",
+                    ""name"": ""CaminarP1"",
                     ""type"": ""Value"",
                     ""id"": ""7418def8-a597-4b70-897a-18f5c839893e"",
                     ""expectedControlType"": ""Vector2"",
@@ -102,9 +102,36 @@ public partial class @NIS: IInputActionCollection2, IDisposable
                     ""initialStateCheck"": true
                 },
                 {
-                    ""name"": ""Jump"",
+                    ""name"": ""CaminarP2"",
                     ""type"": ""Value"",
-                    ""id"": ""aacc605a-75ad-4aa5-94b9-e6d769180f29"",
+                    ""id"": ""a9e9f377-29f5-428f-be1a-a6f7b8d6438b"",
+                    ""expectedControlType"": ""Vector2"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""CaminarP3"",
+                    ""type"": ""Value"",
+                    ""id"": ""d0167555-14d3-47fd-bd84-e0e237d4c9e9"",
+                    ""expectedControlType"": ""Vector2"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""CaminarP4"",
+                    ""type"": ""Value"",
+                    ""id"": ""d99ec6d1-15b0-4c59-8423-edfbdcd539d1"",
+                    ""expectedControlType"": ""Vector2"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""CaminarP5"",
+                    ""type"": ""Value"",
+                    ""id"": ""c4bee013-8ce3-433f-b897-cd6f76a26757"",
                     ""expectedControlType"": ""Vector2"",
                     ""processors"": """",
                     ""interactions"": """",
@@ -119,7 +146,7 @@ public partial class @NIS: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Caminar"",
+                    ""action"": ""CaminarP1"",
                     ""isComposite"": true,
                     ""isPartOfComposite"": false
                 },
@@ -130,7 +157,7 @@ public partial class @NIS: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": "";Teclado"",
-                    ""action"": ""Caminar"",
+                    ""action"": ""CaminarP1"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
@@ -141,7 +168,7 @@ public partial class @NIS: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": "";Teclado"",
-                    ""action"": ""Caminar"",
+                    ""action"": ""CaminarP1"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
@@ -152,7 +179,7 @@ public partial class @NIS: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": "";Teclado"",
-                    ""action"": ""Caminar"",
+                    ""action"": ""CaminarP1"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
@@ -163,154 +190,183 @@ public partial class @NIS: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": "";Teclado"",
-                    ""action"": ""Caminar"",
+                    ""action"": ""CaminarP1"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
                 {
-                    ""name"": ""FLECHAS"",
-                    ""id"": ""844bb1c9-76a9-4b25-9802-5b0365c8eb75"",
+                    ""name"": ""Flechas"",
+                    ""id"": ""bd53a0af-7d6a-4cc9-ae03-11f58aa167af"",
                     ""path"": ""2DVector"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Caminar"",
+                    ""action"": ""CaminarP2"",
                     ""isComposite"": true,
                     ""isPartOfComposite"": false
                 },
                 {
                     ""name"": ""up"",
-                    ""id"": ""217a9c8b-98b3-4483-932f-e0192fe47f7e"",
+                    ""id"": ""ce0c9723-f60d-41c3-8af6-57a05337c53f"",
                     ""path"": ""<Keyboard>/upArrow"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": "";Teclado"",
-                    ""action"": ""Caminar"",
+                    ""groups"": """",
+                    ""action"": ""CaminarP2"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
                 {
                     ""name"": ""down"",
-                    ""id"": ""9f6e85ab-0171-4431-b2f8-dbeba5ad8d2e"",
+                    ""id"": ""d254fab0-bae1-4e85-8607-1721f8f3e747"",
                     ""path"": ""<Keyboard>/downArrow"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": "";Teclado"",
-                    ""action"": ""Caminar"",
+                    ""groups"": """",
+                    ""action"": ""CaminarP2"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
                 {
                     ""name"": ""left"",
-                    ""id"": ""ff99c32c-e61c-4949-90ed-c4f1e843c8f3"",
+                    ""id"": ""7746f884-6b4a-44de-8e4f-3a39f26d4a84"",
                     ""path"": ""<Keyboard>/leftArrow"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": "";Teclado"",
-                    ""action"": ""Caminar"",
+                    ""groups"": """",
+                    ""action"": ""CaminarP2"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
                 {
                     ""name"": ""right"",
-                    ""id"": ""8e59fe53-9981-4b4d-b243-6528a749f9db"",
+                    ""id"": ""2d2d39ff-2b22-4aa9-9e5f-53490ded0f97"",
                     ""path"": ""<Keyboard>/rightArrow"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": "";Teclado"",
-                    ""action"": ""Caminar"",
+                    ""groups"": """",
+                    ""action"": ""CaminarP2"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""IJKL"",
+                    ""id"": ""6f66ece9-325e-4d29-8d4f-b4273e17834d"",
+                    ""path"": ""2DVector"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""CaminarP3"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""up"",
+                    ""id"": ""17dd81a0-fac6-4def-9e4d-8a50aa70d47c"",
+                    ""path"": ""<Keyboard>/i"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""CaminarP3"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""down"",
+                    ""id"": ""b435b763-5bb2-49d9-895d-d9449c86a2c3"",
+                    ""path"": ""<Keyboard>/k"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""CaminarP3"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""left"",
+                    ""id"": ""766bf01e-e9ac-414b-bf32-66a32c9b9f48"",
+                    ""path"": ""<Keyboard>/j"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""CaminarP3"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""right"",
+                    ""id"": ""2a16dfd6-cb55-4fc3-934d-717914292d77"",
+                    ""path"": ""<Keyboard>/l"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""CaminarP3"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""8456"",
+                    ""id"": ""8978f2d1-d826-4795-be9f-05e38ac28bf1"",
+                    ""path"": ""2DVector"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""CaminarP4"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""up"",
+                    ""id"": ""ef0db360-996f-4c02-8656-1bda615817cd"",
+                    ""path"": ""<Keyboard>/numpad8"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""CaminarP4"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""down"",
+                    ""id"": ""de3f573c-6785-4802-a685-c77a2a5f0132"",
+                    ""path"": ""<Keyboard>/numpad5"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""CaminarP4"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""left"",
+                    ""id"": ""8c80c231-f0f0-4ce0-af90-67e69e01edc3"",
+                    ""path"": ""<Keyboard>/numpad4"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""CaminarP4"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""right"",
+                    ""id"": ""a2e84f56-c4ce-4a08-9cd6-ed648fc7e82b"",
+                    ""path"": ""<Keyboard>/numpad6"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""CaminarP4"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
                 {
                     ""name"": """",
-                    ""id"": ""509a7c19-76a8-4cb2-93be-37154dce7aea"",
-                    ""path"": ""<Gamepad>/leftStick"",
+                    ""id"": ""fd35d93f-f192-411a-a5c4-3f494f04182d"",
+                    ""path"": ""<Gamepad>/dpad"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": "";Gamepad"",
-                    ""action"": ""Caminar"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""f4af0fe3-86d4-4efb-92e8-6928fc130d6e"",
-                    ""path"": ""<Keyboard>/space"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": "";Teclado"",
-                    ""action"": ""Jump"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                }
-            ]
-        },
-        {
-            ""name"": ""View"",
-            ""id"": ""49f595b0-c327-429c-bc24-98fffdecdfae"",
-            ""actions"": [
-                {
-                    ""name"": ""Look"",
-                    ""type"": ""Value"",
-                    ""id"": ""2717765e-766e-4278-826c-7333059aee44"",
-                    ""expectedControlType"": ""Vector2"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": true
-                },
-                {
-                    ""name"": ""Click"",
-                    ""type"": ""Button"",
-                    ""id"": ""00d1cf90-11a8-4003-aa90-5a3c40f05454"",
-                    ""expectedControlType"": """",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                }
-            ],
-            ""bindings"": [
-                {
-                    ""name"": """",
-                    ""id"": ""8a004843-0f99-48ae-aafe-8fd4c43866ee"",
-                    ""path"": ""<Mouse>/delta"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": "";Mouse"",
-                    ""action"": ""Look"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""bc5845ec-613d-4f23-9a87-49d086a2d5e9"",
-                    ""path"": ""<Gamepad>/rightStick"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": "";Gamepad"",
-                    ""action"": ""Look"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""d13bc94d-f52c-40f7-b801-79278da1b8b5"",
-                    ""path"": ""<Mouse>/leftButton"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": "";Mouse"",
-                    ""action"": ""Click"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""c260f807-e943-4ded-ac6b-27b6e1ed0856"",
-                    ""path"": ""<Mouse>/rightButton"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": "";Mouse"",
-                    ""action"": ""Click"",
+                    ""action"": ""CaminarP5"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -355,18 +411,16 @@ public partial class @NIS: IInputActionCollection2, IDisposable
 }");
         // PlayerMove
         m_PlayerMove = asset.FindActionMap("PlayerMove", throwIfNotFound: true);
-        m_PlayerMove_Caminar = m_PlayerMove.FindAction("Caminar", throwIfNotFound: true);
-        m_PlayerMove_Jump = m_PlayerMove.FindAction("Jump", throwIfNotFound: true);
-        // View
-        m_View = asset.FindActionMap("View", throwIfNotFound: true);
-        m_View_Look = m_View.FindAction("Look", throwIfNotFound: true);
-        m_View_Click = m_View.FindAction("Click", throwIfNotFound: true);
+        m_PlayerMove_CaminarP1 = m_PlayerMove.FindAction("CaminarP1", throwIfNotFound: true);
+        m_PlayerMove_CaminarP2 = m_PlayerMove.FindAction("CaminarP2", throwIfNotFound: true);
+        m_PlayerMove_CaminarP3 = m_PlayerMove.FindAction("CaminarP3", throwIfNotFound: true);
+        m_PlayerMove_CaminarP4 = m_PlayerMove.FindAction("CaminarP4", throwIfNotFound: true);
+        m_PlayerMove_CaminarP5 = m_PlayerMove.FindAction("CaminarP5", throwIfNotFound: true);
     }
 
     ~@NIS()
     {
         UnityEngine.Debug.Assert(!m_PlayerMove.enabled, "This will cause a leak and performance issues, NIS.PlayerMove.Disable() has not been called.");
-        UnityEngine.Debug.Assert(!m_View.enabled, "This will cause a leak and performance issues, NIS.View.Disable() has not been called.");
     }
 
     /// <summary>
@@ -442,8 +496,11 @@ public partial class @NIS: IInputActionCollection2, IDisposable
     // PlayerMove
     private readonly InputActionMap m_PlayerMove;
     private List<IPlayerMoveActions> m_PlayerMoveActionsCallbackInterfaces = new List<IPlayerMoveActions>();
-    private readonly InputAction m_PlayerMove_Caminar;
-    private readonly InputAction m_PlayerMove_Jump;
+    private readonly InputAction m_PlayerMove_CaminarP1;
+    private readonly InputAction m_PlayerMove_CaminarP2;
+    private readonly InputAction m_PlayerMove_CaminarP3;
+    private readonly InputAction m_PlayerMove_CaminarP4;
+    private readonly InputAction m_PlayerMove_CaminarP5;
     /// <summary>
     /// Provides access to input actions defined in input action map "PlayerMove".
     /// </summary>
@@ -456,13 +513,25 @@ public partial class @NIS: IInputActionCollection2, IDisposable
         /// </summary>
         public PlayerMoveActions(@NIS wrapper) { m_Wrapper = wrapper; }
         /// <summary>
-        /// Provides access to the underlying input action "PlayerMove/Caminar".
+        /// Provides access to the underlying input action "PlayerMove/CaminarP1".
         /// </summary>
-        public InputAction @Caminar => m_Wrapper.m_PlayerMove_Caminar;
+        public InputAction @CaminarP1 => m_Wrapper.m_PlayerMove_CaminarP1;
         /// <summary>
-        /// Provides access to the underlying input action "PlayerMove/Jump".
+        /// Provides access to the underlying input action "PlayerMove/CaminarP2".
         /// </summary>
-        public InputAction @Jump => m_Wrapper.m_PlayerMove_Jump;
+        public InputAction @CaminarP2 => m_Wrapper.m_PlayerMove_CaminarP2;
+        /// <summary>
+        /// Provides access to the underlying input action "PlayerMove/CaminarP3".
+        /// </summary>
+        public InputAction @CaminarP3 => m_Wrapper.m_PlayerMove_CaminarP3;
+        /// <summary>
+        /// Provides access to the underlying input action "PlayerMove/CaminarP4".
+        /// </summary>
+        public InputAction @CaminarP4 => m_Wrapper.m_PlayerMove_CaminarP4;
+        /// <summary>
+        /// Provides access to the underlying input action "PlayerMove/CaminarP5".
+        /// </summary>
+        public InputAction @CaminarP5 => m_Wrapper.m_PlayerMove_CaminarP5;
         /// <summary>
         /// Provides access to the underlying input action map instance.
         /// </summary>
@@ -489,12 +558,21 @@ public partial class @NIS: IInputActionCollection2, IDisposable
         {
             if (instance == null || m_Wrapper.m_PlayerMoveActionsCallbackInterfaces.Contains(instance)) return;
             m_Wrapper.m_PlayerMoveActionsCallbackInterfaces.Add(instance);
-            @Caminar.started += instance.OnCaminar;
-            @Caminar.performed += instance.OnCaminar;
-            @Caminar.canceled += instance.OnCaminar;
-            @Jump.started += instance.OnJump;
-            @Jump.performed += instance.OnJump;
-            @Jump.canceled += instance.OnJump;
+            @CaminarP1.started += instance.OnCaminarP1;
+            @CaminarP1.performed += instance.OnCaminarP1;
+            @CaminarP1.canceled += instance.OnCaminarP1;
+            @CaminarP2.started += instance.OnCaminarP2;
+            @CaminarP2.performed += instance.OnCaminarP2;
+            @CaminarP2.canceled += instance.OnCaminarP2;
+            @CaminarP3.started += instance.OnCaminarP3;
+            @CaminarP3.performed += instance.OnCaminarP3;
+            @CaminarP3.canceled += instance.OnCaminarP3;
+            @CaminarP4.started += instance.OnCaminarP4;
+            @CaminarP4.performed += instance.OnCaminarP4;
+            @CaminarP4.canceled += instance.OnCaminarP4;
+            @CaminarP5.started += instance.OnCaminarP5;
+            @CaminarP5.performed += instance.OnCaminarP5;
+            @CaminarP5.canceled += instance.OnCaminarP5;
         }
 
         /// <summary>
@@ -506,12 +584,21 @@ public partial class @NIS: IInputActionCollection2, IDisposable
         /// <seealso cref="PlayerMoveActions" />
         private void UnregisterCallbacks(IPlayerMoveActions instance)
         {
-            @Caminar.started -= instance.OnCaminar;
-            @Caminar.performed -= instance.OnCaminar;
-            @Caminar.canceled -= instance.OnCaminar;
-            @Jump.started -= instance.OnJump;
-            @Jump.performed -= instance.OnJump;
-            @Jump.canceled -= instance.OnJump;
+            @CaminarP1.started -= instance.OnCaminarP1;
+            @CaminarP1.performed -= instance.OnCaminarP1;
+            @CaminarP1.canceled -= instance.OnCaminarP1;
+            @CaminarP2.started -= instance.OnCaminarP2;
+            @CaminarP2.performed -= instance.OnCaminarP2;
+            @CaminarP2.canceled -= instance.OnCaminarP2;
+            @CaminarP3.started -= instance.OnCaminarP3;
+            @CaminarP3.performed -= instance.OnCaminarP3;
+            @CaminarP3.canceled -= instance.OnCaminarP3;
+            @CaminarP4.started -= instance.OnCaminarP4;
+            @CaminarP4.performed -= instance.OnCaminarP4;
+            @CaminarP4.canceled -= instance.OnCaminarP4;
+            @CaminarP5.started -= instance.OnCaminarP5;
+            @CaminarP5.performed -= instance.OnCaminarP5;
+            @CaminarP5.canceled -= instance.OnCaminarP5;
         }
 
         /// <summary>
@@ -545,113 +632,6 @@ public partial class @NIS: IInputActionCollection2, IDisposable
     /// Provides a new <see cref="PlayerMoveActions" /> instance referencing this action map.
     /// </summary>
     public PlayerMoveActions @PlayerMove => new PlayerMoveActions(this);
-
-    // View
-    private readonly InputActionMap m_View;
-    private List<IViewActions> m_ViewActionsCallbackInterfaces = new List<IViewActions>();
-    private readonly InputAction m_View_Look;
-    private readonly InputAction m_View_Click;
-    /// <summary>
-    /// Provides access to input actions defined in input action map "View".
-    /// </summary>
-    public struct ViewActions
-    {
-        private @NIS m_Wrapper;
-
-        /// <summary>
-        /// Construct a new instance of the input action map wrapper class.
-        /// </summary>
-        public ViewActions(@NIS wrapper) { m_Wrapper = wrapper; }
-        /// <summary>
-        /// Provides access to the underlying input action "View/Look".
-        /// </summary>
-        public InputAction @Look => m_Wrapper.m_View_Look;
-        /// <summary>
-        /// Provides access to the underlying input action "View/Click".
-        /// </summary>
-        public InputAction @Click => m_Wrapper.m_View_Click;
-        /// <summary>
-        /// Provides access to the underlying input action map instance.
-        /// </summary>
-        public InputActionMap Get() { return m_Wrapper.m_View; }
-        /// <inheritdoc cref="UnityEngine.InputSystem.InputActionMap.Enable()" />
-        public void Enable() { Get().Enable(); }
-        /// <inheritdoc cref="UnityEngine.InputSystem.InputActionMap.Disable()" />
-        public void Disable() { Get().Disable(); }
-        /// <inheritdoc cref="UnityEngine.InputSystem.InputActionMap.enabled" />
-        public bool enabled => Get().enabled;
-        /// <summary>
-        /// Implicitly converts an <see ref="ViewActions" /> to an <see ref="InputActionMap" /> instance.
-        /// </summary>
-        public static implicit operator InputActionMap(ViewActions set) { return set.Get(); }
-        /// <summary>
-        /// Adds <see cref="InputAction.started"/>, <see cref="InputAction.performed"/> and <see cref="InputAction.canceled"/> callbacks provided via <param cref="instance" /> on all input actions contained in this map.
-        /// </summary>
-        /// <param name="instance">Callback instance.</param>
-        /// <remarks>
-        /// If <paramref name="instance" /> is <c>null</c> or <paramref name="instance"/> have already been added this method does nothing.
-        /// </remarks>
-        /// <seealso cref="ViewActions" />
-        public void AddCallbacks(IViewActions instance)
-        {
-            if (instance == null || m_Wrapper.m_ViewActionsCallbackInterfaces.Contains(instance)) return;
-            m_Wrapper.m_ViewActionsCallbackInterfaces.Add(instance);
-            @Look.started += instance.OnLook;
-            @Look.performed += instance.OnLook;
-            @Look.canceled += instance.OnLook;
-            @Click.started += instance.OnClick;
-            @Click.performed += instance.OnClick;
-            @Click.canceled += instance.OnClick;
-        }
-
-        /// <summary>
-        /// Removes <see cref="InputAction.started"/>, <see cref="InputAction.performed"/> and <see cref="InputAction.canceled"/> callbacks provided via <param cref="instance" /> on all input actions contained in this map.
-        /// </summary>
-        /// <remarks>
-        /// Calling this method when <paramref name="instance" /> have not previously been registered has no side-effects.
-        /// </remarks>
-        /// <seealso cref="ViewActions" />
-        private void UnregisterCallbacks(IViewActions instance)
-        {
-            @Look.started -= instance.OnLook;
-            @Look.performed -= instance.OnLook;
-            @Look.canceled -= instance.OnLook;
-            @Click.started -= instance.OnClick;
-            @Click.performed -= instance.OnClick;
-            @Click.canceled -= instance.OnClick;
-        }
-
-        /// <summary>
-        /// Unregisters <param cref="instance" /> and unregisters all input action callbacks via <see cref="ViewActions.UnregisterCallbacks(IViewActions)" />.
-        /// </summary>
-        /// <seealso cref="ViewActions.UnregisterCallbacks(IViewActions)" />
-        public void RemoveCallbacks(IViewActions instance)
-        {
-            if (m_Wrapper.m_ViewActionsCallbackInterfaces.Remove(instance))
-                UnregisterCallbacks(instance);
-        }
-
-        /// <summary>
-        /// Replaces all existing callback instances and previously registered input action callbacks associated with them with callbacks provided via <param cref="instance" />.
-        /// </summary>
-        /// <remarks>
-        /// If <paramref name="instance" /> is <c>null</c>, calling this method will only unregister all existing callbacks but not register any new callbacks.
-        /// </remarks>
-        /// <seealso cref="ViewActions.AddCallbacks(IViewActions)" />
-        /// <seealso cref="ViewActions.RemoveCallbacks(IViewActions)" />
-        /// <seealso cref="ViewActions.UnregisterCallbacks(IViewActions)" />
-        public void SetCallbacks(IViewActions instance)
-        {
-            foreach (var item in m_Wrapper.m_ViewActionsCallbackInterfaces)
-                UnregisterCallbacks(item);
-            m_Wrapper.m_ViewActionsCallbackInterfaces.Clear();
-            AddCallbacks(instance);
-        }
-    }
-    /// <summary>
-    /// Provides a new <see cref="ViewActions" /> instance referencing this action map.
-    /// </summary>
-    public ViewActions @View => new ViewActions(this);
     private int m_TecladoSchemeIndex = -1;
     /// <summary>
     /// Provides access to the input control scheme.
@@ -699,40 +679,39 @@ public partial class @NIS: IInputActionCollection2, IDisposable
     public interface IPlayerMoveActions
     {
         /// <summary>
-        /// Method invoked when associated input action "Caminar" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// Method invoked when associated input action "CaminarP1" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
         /// </summary>
         /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
-        void OnCaminar(InputAction.CallbackContext context);
+        void OnCaminarP1(InputAction.CallbackContext context);
         /// <summary>
-        /// Method invoked when associated input action "Jump" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// Method invoked when associated input action "CaminarP2" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
         /// </summary>
         /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
-        void OnJump(InputAction.CallbackContext context);
-    }
-    /// <summary>
-    /// Interface to implement callback methods for all input action callbacks associated with input actions defined by "View" which allows adding and removing callbacks.
-    /// </summary>
-    /// <seealso cref="ViewActions.AddCallbacks(IViewActions)" />
-    /// <seealso cref="ViewActions.RemoveCallbacks(IViewActions)" />
-    public interface IViewActions
-    {
+        void OnCaminarP2(InputAction.CallbackContext context);
         /// <summary>
-        /// Method invoked when associated input action "Look" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// Method invoked when associated input action "CaminarP3" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
         /// </summary>
         /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
-        void OnLook(InputAction.CallbackContext context);
+        void OnCaminarP3(InputAction.CallbackContext context);
         /// <summary>
-        /// Method invoked when associated input action "Click" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// Method invoked when associated input action "CaminarP4" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
         /// </summary>
         /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
-        void OnClick(InputAction.CallbackContext context);
+        void OnCaminarP4(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "CaminarP5" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnCaminarP5(InputAction.CallbackContext context);
     }
 }
