@@ -7,7 +7,7 @@
             "id": "1a868bc6-aa79-4dec-a164-af054523a6aa",
             "actions": [
                 {
-                    "name": "Caminar",
+                    "name": "CaminarP1",
                     "type": "Value",
                     "id": "7418def8-a597-4b70-897a-18f5c839893e",
                     "expectedControlType": "Vector2",
@@ -16,9 +16,36 @@
                     "initialStateCheck": true
                 },
                 {
-                    "name": "Jump",
+                    "name": "CaminarP2",
                     "type": "Value",
-                    "id": "aacc605a-75ad-4aa5-94b9-e6d769180f29",
+                    "id": "a9e9f377-29f5-428f-be1a-a6f7b8d6438b",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "CaminarP3",
+                    "type": "Value",
+                    "id": "d0167555-14d3-47fd-bd84-e0e237d4c9e9",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "CaminarP4",
+                    "type": "Value",
+                    "id": "d99ec6d1-15b0-4c59-8423-edfbdcd539d1",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "CaminarP5",
+                    "type": "Value",
+                    "id": "c4bee013-8ce3-433f-b897-cd6f76a26757",
                     "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": "",
@@ -33,7 +60,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Caminar",
+                    "action": "CaminarP1",
                     "isComposite": true,
                     "isPartOfComposite": false
                 },
@@ -44,7 +71,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": ";Teclado",
-                    "action": "Caminar",
+                    "action": "CaminarP1",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
@@ -55,7 +82,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": ";Teclado",
-                    "action": "Caminar",
+                    "action": "CaminarP1",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
@@ -66,7 +93,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": ";Teclado",
-                    "action": "Caminar",
+                    "action": "CaminarP1",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
@@ -77,154 +104,183 @@
                     "interactions": "",
                     "processors": "",
                     "groups": ";Teclado",
-                    "action": "Caminar",
+                    "action": "CaminarP1",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
                 {
-                    "name": "FLECHAS",
-                    "id": "844bb1c9-76a9-4b25-9802-5b0365c8eb75",
+                    "name": "Flechas",
+                    "id": "bd53a0af-7d6a-4cc9-ae03-11f58aa167af",
                     "path": "2DVector",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Caminar",
+                    "action": "CaminarP2",
                     "isComposite": true,
                     "isPartOfComposite": false
                 },
                 {
                     "name": "up",
-                    "id": "217a9c8b-98b3-4483-932f-e0192fe47f7e",
+                    "id": "ce0c9723-f60d-41c3-8af6-57a05337c53f",
                     "path": "<Keyboard>/upArrow",
                     "interactions": "",
                     "processors": "",
-                    "groups": ";Teclado",
-                    "action": "Caminar",
+                    "groups": "",
+                    "action": "CaminarP2",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
                 {
                     "name": "down",
-                    "id": "9f6e85ab-0171-4431-b2f8-dbeba5ad8d2e",
+                    "id": "d254fab0-bae1-4e85-8607-1721f8f3e747",
                     "path": "<Keyboard>/downArrow",
                     "interactions": "",
                     "processors": "",
-                    "groups": ";Teclado",
-                    "action": "Caminar",
+                    "groups": "",
+                    "action": "CaminarP2",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
                 {
                     "name": "left",
-                    "id": "ff99c32c-e61c-4949-90ed-c4f1e843c8f3",
+                    "id": "7746f884-6b4a-44de-8e4f-3a39f26d4a84",
                     "path": "<Keyboard>/leftArrow",
                     "interactions": "",
                     "processors": "",
-                    "groups": ";Teclado",
-                    "action": "Caminar",
+                    "groups": "",
+                    "action": "CaminarP2",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
                 {
                     "name": "right",
-                    "id": "8e59fe53-9981-4b4d-b243-6528a749f9db",
+                    "id": "2d2d39ff-2b22-4aa9-9e5f-53490ded0f97",
                     "path": "<Keyboard>/rightArrow",
                     "interactions": "",
                     "processors": "",
-                    "groups": ";Teclado",
-                    "action": "Caminar",
+                    "groups": "",
+                    "action": "CaminarP2",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "IJKL",
+                    "id": "6f66ece9-325e-4d29-8d4f-b4273e17834d",
+                    "path": "2DVector",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "CaminarP3",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "up",
+                    "id": "17dd81a0-fac6-4def-9e4d-8a50aa70d47c",
+                    "path": "<Keyboard>/i",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "CaminarP3",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "down",
+                    "id": "b435b763-5bb2-49d9-895d-d9449c86a2c3",
+                    "path": "<Keyboard>/k",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "CaminarP3",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "left",
+                    "id": "766bf01e-e9ac-414b-bf32-66a32c9b9f48",
+                    "path": "<Keyboard>/j",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "CaminarP3",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "2a16dfd6-cb55-4fc3-934d-717914292d77",
+                    "path": "<Keyboard>/l",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "CaminarP3",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "8456",
+                    "id": "8978f2d1-d826-4795-be9f-05e38ac28bf1",
+                    "path": "2DVector",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "CaminarP4",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "up",
+                    "id": "ef0db360-996f-4c02-8656-1bda615817cd",
+                    "path": "<Keyboard>/numpad8",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "CaminarP4",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "down",
+                    "id": "de3f573c-6785-4802-a685-c77a2a5f0132",
+                    "path": "<Keyboard>/numpad5",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "CaminarP4",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "left",
+                    "id": "8c80c231-f0f0-4ce0-af90-67e69e01edc3",
+                    "path": "<Keyboard>/numpad4",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "CaminarP4",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "a2e84f56-c4ce-4a08-9cd6-ed648fc7e82b",
+                    "path": "<Keyboard>/numpad6",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "CaminarP4",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
                 {
                     "name": "",
-                    "id": "509a7c19-76a8-4cb2-93be-37154dce7aea",
-                    "path": "<Gamepad>/leftStick",
+                    "id": "fd35d93f-f192-411a-a5c4-3f494f04182d",
+                    "path": "<Gamepad>/dpad",
                     "interactions": "",
                     "processors": "",
                     "groups": ";Gamepad",
-                    "action": "Caminar",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "f4af0fe3-86d4-4efb-92e8-6928fc130d6e",
-                    "path": "<Keyboard>/space",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": ";Teclado",
-                    "action": "Jump",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                }
-            ]
-        },
-        {
-            "name": "View",
-            "id": "49f595b0-c327-429c-bc24-98fffdecdfae",
-            "actions": [
-                {
-                    "name": "Look",
-                    "type": "Value",
-                    "id": "2717765e-766e-4278-826c-7333059aee44",
-                    "expectedControlType": "Vector2",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": true
-                },
-                {
-                    "name": "Click",
-                    "type": "Button",
-                    "id": "00d1cf90-11a8-4003-aa90-5a3c40f05454",
-                    "expectedControlType": "",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                }
-            ],
-            "bindings": [
-                {
-                    "name": "",
-                    "id": "8a004843-0f99-48ae-aafe-8fd4c43866ee",
-                    "path": "<Mouse>/delta",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": ";Mouse",
-                    "action": "Look",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "bc5845ec-613d-4f23-9a87-49d086a2d5e9",
-                    "path": "<Gamepad>/rightStick",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": ";Gamepad",
-                    "action": "Look",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "d13bc94d-f52c-40f7-b801-79278da1b8b5",
-                    "path": "<Mouse>/leftButton",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": ";Mouse",
-                    "action": "Click",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "c260f807-e943-4ded-ac6b-27b6e1ed0856",
-                    "path": "<Mouse>/rightButton",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": ";Mouse",
-                    "action": "Click",
+                    "action": "CaminarP5",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

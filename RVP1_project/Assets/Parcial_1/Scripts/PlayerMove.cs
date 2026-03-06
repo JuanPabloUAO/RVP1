@@ -3,42 +3,49 @@ using UnityEngine.InputSystem;
 
 public class PlayerMove : MonoBehaviour
 {
-    private NIS inputActions;      
-    private Vector2 moveInput;     
+    public int jugador = 1;
+    public float velocidad = 5f;
 
-    public float speed = 5f;
+    private NIS controles;
+    private Vector2 movimiento;
 
-    private Rigidbody2D rb;
-
-    private void Awake()
+    void Awake()
     {
-        inputActions = new NIS();
-        rb = GetComponent<Rigidbody2D>();
+        controles = new NIS();
     }
 
-    private void OnEnable()
+    void OnEnable()
     {
-        inputActions.Enable();
+        controles.Enable();
 
-       
-        inputActions.PlayerMove.Caminar.performed += OnMove;
-        inputActions.PlayerMove.Caminar.canceled += OnMove;
+        if (jugador == 1)
+        {
+            controles.PlayerMove.CaminarP1.performed += ctx => movimiento = ctx.ReadValue<Vector2>();
+            controles.PlayerMove.CaminarP1.canceled += ctx => movimiento = Vector2.zero;
+        }
+
+        if (jugador == 2)
+        {
+            controles.PlayerMove.CaminarP2.performed += ctx => movimiento = ctx.ReadValue<Vector2>();
+            controles.PlayerMove.CaminarP2.canceled += ctx => movimiento = Vector2.zero;
+        }
+
+        if (jugador == 3)
+        {
+            controles.PlayerMove.CaminarP3.performed += ctx => movimiento = ctx.ReadValue<Vector2>();
+            controles.PlayerMove.CaminarP3.canceled += ctx => movimiento = Vector2.zero;
+        }
+
+        if (jugador == 4)
+        {
+            controles.PlayerMove.CaminarP4.performed += ctx => movimiento = ctx.ReadValue<Vector2>();
+            controles.PlayerMove.CaminarP4.canceled += ctx => movimiento = Vector2.zero;
+        }
     }
 
-    private void OnDisable()
+    void Update()
     {
-        inputActions.PlayerMove.Caminar.performed -= OnMove;
-        inputActions.PlayerMove.Caminar.canceled -= OnMove;
-        inputActions.Disable();
-    }
-
-    private void OnMove(InputAction.CallbackContext context)
-    {
-        moveInput = context.ReadValue<Vector2>();
-    }
-
-    private void FixedUpdate()
-    {
-        rb.linearVelocity = moveInput * speed;
+        Vector3 dir = new Vector3(movimiento.x, movimiento.y, 0);
+        transform.Translate(dir * velocidad * Time.deltaTime);
     }
 }
