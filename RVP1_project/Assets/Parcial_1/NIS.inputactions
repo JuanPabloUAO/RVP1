@@ -50,6 +50,51 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
+                },
+                {
+                    "name": "SaltarP1",
+                    "type": "Button",
+                    "id": "7fb51e7b-f3b7-4d37-9f91-0d045d19ba8a",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "SaltarP2",
+                    "type": "Button",
+                    "id": "c3dfa1c0-bc92-4dc5-999a-55b62fcc19fc",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "SaltarP3",
+                    "type": "Button",
+                    "id": "28964d19-d57e-417c-9bb5-9185ab785daf",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "SaltarP4",
+                    "type": "Button",
+                    "id": "57680fd3-a4c7-40d2-8e33-8abe7d882920",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "SaltarP5",
+                    "type": "Button",
+                    "id": "999f51a5-7eff-4055-958f-415e2b43e4f5",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -63,17 +108,6 @@
                     "action": "CaminarP1",
                     "isComposite": true,
                     "isPartOfComposite": false
-                },
-                {
-                    "name": "up",
-                    "id": "78ed5467-0d4f-4a99-8304-fba2d6db7fd2",
-                    "path": "<Keyboard>/w",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": ";Teclado",
-                    "action": "CaminarP1",
-                    "isComposite": false,
-                    "isPartOfComposite": true
                 },
                 {
                     "name": "down",
@@ -120,17 +154,6 @@
                     "isPartOfComposite": false
                 },
                 {
-                    "name": "up",
-                    "id": "ce0c9723-f60d-41c3-8af6-57a05337c53f",
-                    "path": "<Keyboard>/upArrow",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "CaminarP2",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
                     "name": "down",
                     "id": "d254fab0-bae1-4e85-8607-1721f8f3e747",
                     "path": "<Keyboard>/downArrow",
@@ -173,17 +196,6 @@
                     "action": "CaminarP3",
                     "isComposite": true,
                     "isPartOfComposite": false
-                },
-                {
-                    "name": "up",
-                    "id": "17dd81a0-fac6-4def-9e4d-8a50aa70d47c",
-                    "path": "<Keyboard>/i",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "CaminarP3",
-                    "isComposite": false,
-                    "isPartOfComposite": true
                 },
                 {
                     "name": "down",
@@ -230,17 +242,6 @@
                     "isPartOfComposite": false
                 },
                 {
-                    "name": "up",
-                    "id": "ef0db360-996f-4c02-8656-1bda615817cd",
-                    "path": "<Keyboard>/numpad8",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "CaminarP4",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
                     "name": "down",
                     "id": "de3f573c-6785-4802-a685-c77a2a5f0132",
                     "path": "<Keyboard>/numpad5",
@@ -281,6 +282,61 @@
                     "processors": "",
                     "groups": ";Gamepad",
                     "action": "CaminarP5",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a6a95ed9-ea4b-4954-867b-00ca87c8e617",
+                    "path": "<Keyboard>/w",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Teclado",
+                    "action": "SaltarP1",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "2d1fec92-4d66-4c8d-bffc-37adcf99ba5c",
+                    "path": "<Keyboard>/upArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Teclado",
+                    "action": "SaltarP2",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "5c6c5243-f379-4331-91b3-5538661f8620",
+                    "path": "<Keyboard>/i",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Teclado",
+                    "action": "SaltarP3",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b7a5afe9-91c3-4948-9a8f-35c3cdd4e523",
+                    "path": "<Keyboard>/numpad8",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Teclado",
+                    "action": "SaltarP4",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "686bec65-877c-43fb-aaac-eefe878168f4",
+                    "path": "<XInputController>/buttonSouth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Gamepad",
+                    "action": "SaltarP5",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
