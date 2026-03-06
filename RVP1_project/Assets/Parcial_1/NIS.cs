@@ -136,6 +136,51 @@ public partial class @NIS: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""SaltarP1"",
+                    ""type"": ""Button"",
+                    ""id"": ""7fb51e7b-f3b7-4d37-9f91-0d045d19ba8a"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""SaltarP2"",
+                    ""type"": ""Button"",
+                    ""id"": ""c3dfa1c0-bc92-4dc5-999a-55b62fcc19fc"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""SaltarP3"",
+                    ""type"": ""Button"",
+                    ""id"": ""28964d19-d57e-417c-9bb5-9185ab785daf"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""SaltarP4"",
+                    ""type"": ""Button"",
+                    ""id"": ""57680fd3-a4c7-40d2-8e33-8abe7d882920"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""SaltarP5"",
+                    ""type"": ""Button"",
+                    ""id"": ""999f51a5-7eff-4055-958f-415e2b43e4f5"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -149,17 +194,6 @@ public partial class @NIS: IInputActionCollection2, IDisposable
                     ""action"": ""CaminarP1"",
                     ""isComposite"": true,
                     ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": ""up"",
-                    ""id"": ""78ed5467-0d4f-4a99-8304-fba2d6db7fd2"",
-                    ""path"": ""<Keyboard>/w"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": "";Teclado"",
-                    ""action"": ""CaminarP1"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
                 },
                 {
                     ""name"": ""down"",
@@ -206,17 +240,6 @@ public partial class @NIS: IInputActionCollection2, IDisposable
                     ""isPartOfComposite"": false
                 },
                 {
-                    ""name"": ""up"",
-                    ""id"": ""ce0c9723-f60d-41c3-8af6-57a05337c53f"",
-                    ""path"": ""<Keyboard>/upArrow"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""CaminarP2"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
                     ""name"": ""down"",
                     ""id"": ""d254fab0-bae1-4e85-8607-1721f8f3e747"",
                     ""path"": ""<Keyboard>/downArrow"",
@@ -259,17 +282,6 @@ public partial class @NIS: IInputActionCollection2, IDisposable
                     ""action"": ""CaminarP3"",
                     ""isComposite"": true,
                     ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": ""up"",
-                    ""id"": ""17dd81a0-fac6-4def-9e4d-8a50aa70d47c"",
-                    ""path"": ""<Keyboard>/i"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""CaminarP3"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
                 },
                 {
                     ""name"": ""down"",
@@ -316,17 +328,6 @@ public partial class @NIS: IInputActionCollection2, IDisposable
                     ""isPartOfComposite"": false
                 },
                 {
-                    ""name"": ""up"",
-                    ""id"": ""ef0db360-996f-4c02-8656-1bda615817cd"",
-                    ""path"": ""<Keyboard>/numpad8"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""CaminarP4"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
                     ""name"": ""down"",
                     ""id"": ""de3f573c-6785-4802-a685-c77a2a5f0132"",
                     ""path"": ""<Keyboard>/numpad5"",
@@ -367,6 +368,61 @@ public partial class @NIS: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""groups"": "";Gamepad"",
                     ""action"": ""CaminarP5"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""a6a95ed9-ea4b-4954-867b-00ca87c8e617"",
+                    ""path"": ""<Keyboard>/w"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Teclado"",
+                    ""action"": ""SaltarP1"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""2d1fec92-4d66-4c8d-bffc-37adcf99ba5c"",
+                    ""path"": ""<Keyboard>/upArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Teclado"",
+                    ""action"": ""SaltarP2"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""5c6c5243-f379-4331-91b3-5538661f8620"",
+                    ""path"": ""<Keyboard>/i"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Teclado"",
+                    ""action"": ""SaltarP3"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""b7a5afe9-91c3-4948-9a8f-35c3cdd4e523"",
+                    ""path"": ""<Keyboard>/numpad8"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Teclado"",
+                    ""action"": ""SaltarP4"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""686bec65-877c-43fb-aaac-eefe878168f4"",
+                    ""path"": ""<XInputController>/buttonSouth"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Gamepad"",
+                    ""action"": ""SaltarP5"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -416,6 +472,11 @@ public partial class @NIS: IInputActionCollection2, IDisposable
         m_PlayerMove_CaminarP3 = m_PlayerMove.FindAction("CaminarP3", throwIfNotFound: true);
         m_PlayerMove_CaminarP4 = m_PlayerMove.FindAction("CaminarP4", throwIfNotFound: true);
         m_PlayerMove_CaminarP5 = m_PlayerMove.FindAction("CaminarP5", throwIfNotFound: true);
+        m_PlayerMove_SaltarP1 = m_PlayerMove.FindAction("SaltarP1", throwIfNotFound: true);
+        m_PlayerMove_SaltarP2 = m_PlayerMove.FindAction("SaltarP2", throwIfNotFound: true);
+        m_PlayerMove_SaltarP3 = m_PlayerMove.FindAction("SaltarP3", throwIfNotFound: true);
+        m_PlayerMove_SaltarP4 = m_PlayerMove.FindAction("SaltarP4", throwIfNotFound: true);
+        m_PlayerMove_SaltarP5 = m_PlayerMove.FindAction("SaltarP5", throwIfNotFound: true);
     }
 
     ~@NIS()
@@ -501,6 +562,11 @@ public partial class @NIS: IInputActionCollection2, IDisposable
     private readonly InputAction m_PlayerMove_CaminarP3;
     private readonly InputAction m_PlayerMove_CaminarP4;
     private readonly InputAction m_PlayerMove_CaminarP5;
+    private readonly InputAction m_PlayerMove_SaltarP1;
+    private readonly InputAction m_PlayerMove_SaltarP2;
+    private readonly InputAction m_PlayerMove_SaltarP3;
+    private readonly InputAction m_PlayerMove_SaltarP4;
+    private readonly InputAction m_PlayerMove_SaltarP5;
     /// <summary>
     /// Provides access to input actions defined in input action map "PlayerMove".
     /// </summary>
@@ -532,6 +598,26 @@ public partial class @NIS: IInputActionCollection2, IDisposable
         /// Provides access to the underlying input action "PlayerMove/CaminarP5".
         /// </summary>
         public InputAction @CaminarP5 => m_Wrapper.m_PlayerMove_CaminarP5;
+        /// <summary>
+        /// Provides access to the underlying input action "PlayerMove/SaltarP1".
+        /// </summary>
+        public InputAction @SaltarP1 => m_Wrapper.m_PlayerMove_SaltarP1;
+        /// <summary>
+        /// Provides access to the underlying input action "PlayerMove/SaltarP2".
+        /// </summary>
+        public InputAction @SaltarP2 => m_Wrapper.m_PlayerMove_SaltarP2;
+        /// <summary>
+        /// Provides access to the underlying input action "PlayerMove/SaltarP3".
+        /// </summary>
+        public InputAction @SaltarP3 => m_Wrapper.m_PlayerMove_SaltarP3;
+        /// <summary>
+        /// Provides access to the underlying input action "PlayerMove/SaltarP4".
+        /// </summary>
+        public InputAction @SaltarP4 => m_Wrapper.m_PlayerMove_SaltarP4;
+        /// <summary>
+        /// Provides access to the underlying input action "PlayerMove/SaltarP5".
+        /// </summary>
+        public InputAction @SaltarP5 => m_Wrapper.m_PlayerMove_SaltarP5;
         /// <summary>
         /// Provides access to the underlying input action map instance.
         /// </summary>
@@ -573,6 +659,21 @@ public partial class @NIS: IInputActionCollection2, IDisposable
             @CaminarP5.started += instance.OnCaminarP5;
             @CaminarP5.performed += instance.OnCaminarP5;
             @CaminarP5.canceled += instance.OnCaminarP5;
+            @SaltarP1.started += instance.OnSaltarP1;
+            @SaltarP1.performed += instance.OnSaltarP1;
+            @SaltarP1.canceled += instance.OnSaltarP1;
+            @SaltarP2.started += instance.OnSaltarP2;
+            @SaltarP2.performed += instance.OnSaltarP2;
+            @SaltarP2.canceled += instance.OnSaltarP2;
+            @SaltarP3.started += instance.OnSaltarP3;
+            @SaltarP3.performed += instance.OnSaltarP3;
+            @SaltarP3.canceled += instance.OnSaltarP3;
+            @SaltarP4.started += instance.OnSaltarP4;
+            @SaltarP4.performed += instance.OnSaltarP4;
+            @SaltarP4.canceled += instance.OnSaltarP4;
+            @SaltarP5.started += instance.OnSaltarP5;
+            @SaltarP5.performed += instance.OnSaltarP5;
+            @SaltarP5.canceled += instance.OnSaltarP5;
         }
 
         /// <summary>
@@ -599,6 +700,21 @@ public partial class @NIS: IInputActionCollection2, IDisposable
             @CaminarP5.started -= instance.OnCaminarP5;
             @CaminarP5.performed -= instance.OnCaminarP5;
             @CaminarP5.canceled -= instance.OnCaminarP5;
+            @SaltarP1.started -= instance.OnSaltarP1;
+            @SaltarP1.performed -= instance.OnSaltarP1;
+            @SaltarP1.canceled -= instance.OnSaltarP1;
+            @SaltarP2.started -= instance.OnSaltarP2;
+            @SaltarP2.performed -= instance.OnSaltarP2;
+            @SaltarP2.canceled -= instance.OnSaltarP2;
+            @SaltarP3.started -= instance.OnSaltarP3;
+            @SaltarP3.performed -= instance.OnSaltarP3;
+            @SaltarP3.canceled -= instance.OnSaltarP3;
+            @SaltarP4.started -= instance.OnSaltarP4;
+            @SaltarP4.performed -= instance.OnSaltarP4;
+            @SaltarP4.canceled -= instance.OnSaltarP4;
+            @SaltarP5.started -= instance.OnSaltarP5;
+            @SaltarP5.performed -= instance.OnSaltarP5;
+            @SaltarP5.canceled -= instance.OnSaltarP5;
         }
 
         /// <summary>
@@ -713,5 +829,40 @@ public partial class @NIS: IInputActionCollection2, IDisposable
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnCaminarP5(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "SaltarP1" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnSaltarP1(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "SaltarP2" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnSaltarP2(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "SaltarP3" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnSaltarP3(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "SaltarP4" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnSaltarP4(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "SaltarP5" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnSaltarP5(InputAction.CallbackContext context);
     }
 }
