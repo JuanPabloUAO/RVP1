@@ -7,6 +7,13 @@ public class PlayerMove : MonoBehaviour
     public float velocidad = 5f;
     public float fuerzaSalto = 7f;
 
+    public AudioSource audioSource;
+    public AudioClip sonidoPaso;
+    public AudioClip sonidoSalto;
+    public float intervaloPasos = 0.4f;
+
+    private float temporizadorPasos;
+
     private NIS controles;
     private Vector2 movimiento;
     private Rigidbody2D rb;
@@ -20,6 +27,7 @@ public class PlayerMove : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         sr = GetComponent<SpriteRenderer>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     void OnEnable()
@@ -118,9 +126,24 @@ public class PlayerMove : MonoBehaviour
         transform.Translate(dir * velocidad * Time.deltaTime);
 
         if (movimiento.x != 0)
+        {
             anim.SetBool("isRun", true);
+
+            if (enSuelo)
+            {
+                temporizadorPasos -= Time.deltaTime;
+
+                if (temporizadorPasos <= 0f)
+                {
+                    audioSource.PlayOneShot(sonidoPaso);
+                    temporizadorPasos = intervaloPasos;
+                }
+            }
+        }
         else
+        {
             anim.SetBool("isRun", false);
+        }
 
         if (movimiento.x > 0)
             sr.flipX = false;
@@ -136,6 +159,9 @@ public class PlayerMove : MonoBehaviour
         rb.linearVelocity = new Vector2(rb.linearVelocity.x, fuerzaSalto);
         anim.SetBool("isJump", true);
         enSuelo = false;
+
+        if (sonidoSalto != null)
+            audioSource.PlayOneShot(sonidoSalto);
     }
 
     void OnCollisionEnter2D(Collision2D col)
