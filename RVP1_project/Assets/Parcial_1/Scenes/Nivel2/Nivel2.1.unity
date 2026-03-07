@@ -818,7 +818,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -697173262802681149, guid: fde2d1e18eae5764badd5ff20cf82ed4, type: 3}
       propertyPath: fuerzaSalto
-      value: 2
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 501084108626611592, guid: fde2d1e18eae5764badd5ff20cf82ed4, type: 3}
       propertyPath: m_Size.x
