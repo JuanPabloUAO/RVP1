@@ -62,6 +62,11 @@ public class PlayerMove : MonoBehaviour
         }
     }
 
+    void OnDisable()
+    {
+        controles.Disable();
+    }
+
     void Update()
     {
         Vector3 dir = new Vector3(movimiento.x, 0, 0);
@@ -81,6 +86,7 @@ public class PlayerMove : MonoBehaviour
     void Saltar()
     {
         if (!enSuelo) return;
+        if (rb == null) return;
 
         rb.linearVelocity = new Vector2(rb.linearVelocity.x, fuerzaSalto);
         anim.SetBool("isJump", true);
