@@ -36,38 +36,88 @@ public class PlayerMove : MonoBehaviour
 
         if (jugador == 1)
         {
-            controles.PlayerMove.CaminarP1.performed += ctx => movimiento = ctx.ReadValue<Vector2>();
-            controles.PlayerMove.CaminarP1.canceled += ctx => movimiento = Vector2.zero;
-            controles.PlayerMove.SaltarP1.performed += ctx => Saltar();
+            controles.PlayerMove.CaminarP1.performed += OnMove;
+            controles.PlayerMove.CaminarP1.canceled += OnMove;
+            controles.PlayerMove.SaltarP1.performed += OnJump;
         }
 
         if (jugador == 2)
         {
-            controles.PlayerMove.CaminarP2.performed += ctx => movimiento = ctx.ReadValue<Vector2>();
-            controles.PlayerMove.CaminarP2.canceled += ctx => movimiento = Vector2.zero;
-            controles.PlayerMove.SaltarP2.performed += ctx => Saltar();
+            controles.PlayerMove.CaminarP2.performed += OnMove;
+            controles.PlayerMove.CaminarP2.canceled += OnMove;
+            controles.PlayerMove.SaltarP2.performed += OnJump;
         }
 
         if (jugador == 3)
         {
-            controles.PlayerMove.CaminarP3.performed += ctx => movimiento = ctx.ReadValue<Vector2>();
-            controles.PlayerMove.CaminarP3.canceled += ctx => movimiento = Vector2.zero;
-            controles.PlayerMove.SaltarP3.performed += ctx => Saltar();
+            controles.PlayerMove.CaminarP3.performed += OnMove;
+            controles.PlayerMove.CaminarP3.canceled += OnMove;
+            controles.PlayerMove.SaltarP3.performed += OnJump;
         }
 
         if (jugador == 4)
         {
-            controles.PlayerMove.CaminarP4.performed += ctx => movimiento = ctx.ReadValue<Vector2>();
-            controles.PlayerMove.CaminarP4.canceled += ctx => movimiento = Vector2.zero;
-            controles.PlayerMove.SaltarP4.performed += ctx => Saltar();
+            controles.PlayerMove.CaminarP4.performed += OnMove;
+            controles.PlayerMove.CaminarP4.canceled += OnMove;
+            controles.PlayerMove.SaltarP4.performed += OnJump;
         }
 
         if (jugador == 5)
         {
-            controles.PlayerMove.CaminarP5.performed += ctx => movimiento = ctx.ReadValue<Vector2>();
-            controles.PlayerMove.CaminarP5.canceled += ctx => movimiento = Vector2.zero;
-            controles.PlayerMove.SaltarP5.performed += ctx => Saltar();
+            controles.PlayerMove.CaminarP5.performed += OnMove;
+            controles.PlayerMove.CaminarP5.canceled += OnMove;
+            controles.PlayerMove.SaltarP5.performed += OnJump;
         }
+    }
+
+    void OnDisable()
+    {
+        if (jugador == 1)
+        {
+            controles.PlayerMove.CaminarP1.performed -= OnMove;
+            controles.PlayerMove.CaminarP1.canceled -= OnMove;
+            controles.PlayerMove.SaltarP1.performed -= OnJump;
+        }
+
+        if (jugador == 2)
+        {
+            controles.PlayerMove.CaminarP2.performed -= OnMove;
+            controles.PlayerMove.CaminarP2.canceled -= OnMove;
+            controles.PlayerMove.SaltarP2.performed -= OnJump;
+        }
+
+        if (jugador == 3)
+        {
+            controles.PlayerMove.CaminarP3.performed -= OnMove;
+            controles.PlayerMove.CaminarP3.canceled -= OnMove;
+            controles.PlayerMove.SaltarP3.performed -= OnJump;
+        }
+
+        if (jugador == 4)
+        {
+            controles.PlayerMove.CaminarP4.performed -= OnMove;
+            controles.PlayerMove.CaminarP4.canceled -= OnMove;
+            controles.PlayerMove.SaltarP4.performed -= OnJump;
+        }
+
+        if (jugador == 5)
+        {
+            controles.PlayerMove.CaminarP5.performed -= OnMove;
+            controles.PlayerMove.CaminarP5.canceled -= OnMove;
+            controles.PlayerMove.SaltarP5.performed -= OnJump;
+        }
+
+        controles.Disable();
+    }
+
+    private void OnMove(InputAction.CallbackContext context)
+    {
+        movimiento = context.ReadValue<Vector2>();
+    }
+
+    private void OnJump(InputAction.CallbackContext context)
+    {
+        Saltar();
     }
 
     void Update()
@@ -104,6 +154,7 @@ public class PlayerMove : MonoBehaviour
     void Saltar()
     {
         if (!enSuelo) return;
+        if (rb == null) return;
 
         rb.linearVelocity = new Vector2(rb.linearVelocity.x, fuerzaSalto);
         anim.SetBool("isJump", true);
