@@ -12,8 +12,23 @@ EditorBuildSettings:
     path: Assets/Parcial_1/Scenes/Nivel1.unity
     guid: c8a9e8c235dd51641b3634eb7b98f4be
   - enabled: 1
+    path: Assets/Parcial_1/Scenes/Nivel2/Nivel2.unity
+    guid: 8524cd7f4a964fd4bbfe5c87dbdd0b37
+  - enabled: 1
+    path: Assets/Parcial_1/Scenes/Nivel2/PuzzleScene.unity
+    guid: 53de5cea376078245b9c3cc8283a5e60
+  - enabled: 1
+    path: Assets/Parcial_1/Scenes/Nivel2/Nivel2.1.unity
+    guid: c3355c90e9176d14eab485b97b303590
+  - enabled: 1
+    path: Assets/Parcial_1/Scenes/Nivel2/puzzle2/PuzzleScene2.unity
+    guid: 8489e3a3bcc58304e954a7277ce9b89b
+  - enabled: 1
+    path: Assets/Parcial_1/Scenes/Nivel2/Credits.unity
+    guid: cb0e9e9ab4c4ba646a6f749ab615eaea
+  - enabled: 0
     path: Assets/Parcial_1/Scenes/Nivel2.unity
-    guid: 4029e22e2abc9934784d78d4b5ecd36e
+    guid: dabd3d64cd37f7740a2494c368130c66
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

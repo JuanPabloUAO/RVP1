@@ -5,11 +5,16 @@ TagManager:
   serializedVersion: 3
   tags:
   - Ground
+  - Trap
+  - InteractableObject
+  - OneWayPlatform
+  - Box
+  - Key
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Ground
   - Water
   - UI
   - 
