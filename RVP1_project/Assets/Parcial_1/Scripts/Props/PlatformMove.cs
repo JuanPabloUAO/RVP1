@@ -4,11 +4,13 @@ using UnityEngine;
 
 public class PlatformMove : MonoBehaviour
 {
-    public float speed = 0.5f;
+    public float speed = 2f;
+
+    public bool activatePlatform = false;
 
     private float waitTime;
 
-    public UnityEngine.Transform[] moveSpots;
+    public Transform[] moveSpots;
 
     public float startWaitTime = 2f;
 
@@ -21,6 +23,9 @@ public class PlatformMove : MonoBehaviour
 
     void Update()
     {
+        // Si el botón no está activado la plataforma no se mueve
+        if (!activatePlatform) return;
+
         transform.position = Vector2.MoveTowards(
             transform.position,
             moveSpots[i].position,
@@ -32,9 +37,13 @@ public class PlatformMove : MonoBehaviour
             if (waitTime <= 0)
             {
                 if (i < moveSpots.Length - 1)
+                {
                     i++;
+                }
                 else
+                {
                     i = 0;
+                }
 
                 waitTime = startWaitTime;
             }
@@ -45,13 +54,20 @@ public class PlatformMove : MonoBehaviour
         }
     }
 
+    // Hace que el jugador se mueva con la plataforma
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        collision.collider.transform.SetParent(transform);
+        if (collision.collider.CompareTag("Player"))
+        {
+            collision.collider.transform.SetParent(transform);
+        }
     }
 
     private void OnCollisionExit2D(Collision2D collision)
     {
-        collision.collider.transform.SetParent(null);
+        if (collision.collider.CompareTag("Player"))
+        {
+            collision.collider.transform.SetParent(null);
+        }
     }
 }
